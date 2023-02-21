@@ -1,0 +1,61 @@
+body{
+    background-color: rgba(43, 226, 92, 0.754);
+}
+
+section{background-color: orange;}
+
+*{border: 2px solid black;
+}
+
+h1{
+    width: 100%;
+    padding-bottom: 40px;
+    float left: ;
+    color: blue;
+    font-size: 80px;
+}
+
+#crew{
+    width: 700px;
+}
+
+#doflamingo{
+    width: 250px;
+}
+
+#shanks{
+    width: 250px;
+}
+
+#ace{
+    width: 250px;
+}
+
+nav {
+    width: 100%
+}
+
+nav li {display:inline;
+}
+
+nav ul {
+    list-style: none;
+}
+
+article img {
+    width: 100%;
+}
+
+.extras {
+    width: 32%;
+    display:inline-block;
+}
+
+article h3{
+    color:aqua;
+}
+
+article li {
+    color:beige;
+}
+
