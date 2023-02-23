@@ -18,6 +18,7 @@ function validateForm(answer) {
 
 greeting();
 
+
 // let myName = "Kenya";
 alert("Welcome to my page!");
 
@@ -38,12 +39,14 @@ function likesAnime() {
     }
 }
 
-likesAnime(),
-    ending();
+likesAnime();
+    
 
 function ending() {
     document.write("Thank you for visiting my page!");
 }
+
+ending();
 
 let myNumber = prompt("How many stars would you give One Piece? 1-5");
 
@@ -53,7 +56,7 @@ for (let i = 1; i <= myNumber; i++) {
     img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRpnDIQumZ4M76KIk21xmtrk0pDPIOXLzKbA&usqp=CAU";
     let image = document.getElementById("picture");
     image.appendChild(img);
-
+    
 }
 
 let x = 5
