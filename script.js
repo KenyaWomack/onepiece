@@ -48,8 +48,12 @@ function ending() {
 
 ending();
 
-let myNumber = prompt("How many stars would you give One Piece? 1-5");
+let myNumber =parseInt(prompt("How many stars would you give One Piece? 1-5"));
+// let answer = prompt("Only numbers 1-5 please")
 
+while (myNumber < 1 || myNumber > 5) {
+    myNumber = prompt("Please choose again - Only numbers 1-5 please");
+}
 
 for (let i = 1; i <= myNumber; i++) {
     let img = document.createElement("img");
