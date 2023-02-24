@@ -26,16 +26,19 @@ alert("Welcome to my page!");
 
 
 function likesAnime() {
-    let animeChoice = prompt("Do you like One Piece? Type yes or no");
+    let animeChoice =prompt("Do you like One Piece? Type yes or no");
     console.log(animeChoice);
-    validateForm(animeChoice)
+    // validateForm(animeChoice)
+    
     if (animeChoice == "yes") {
         document.write("I do too!");
     } else if (animeChoice == "no") {
         let anime = prompt("What anime do you like to watch?");
         document.write("I like " + anime + " too.");
     } else {
-        document.write("I'm not sure what that one is. I'll have to check that one out!");
+      likesAnime()
+       
+        // document.write("I'm not sure what that one is. I'll have to check that one out!");
     }
 }
 
@@ -48,20 +51,29 @@ function ending() {
 
 ending();
 
-let myNumber =parseInt(prompt("How many stars would you give One Piece? 1-5"));
-// let answer = prompt("Only numbers 1-5 please")
+function starRating() {
 
-while (myNumber < 1 || myNumber > 5) {
-    myNumber = prompt("Please choose again - Only numbers 1-5 please");
-}
+    let myNumber =parseInt(prompt("How many stars would you give One Piece? 1-5"));
+    // let answer = prompt("Only numbers 1-5 please")
+   console.log ('myNunber: ', myNumber);
 
-for (let i = 1; i <= myNumber; i++) {
-    let img = document.createElement("img");
-    img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRpnDIQumZ4M76KIk21xmtrk0pDPIOXLzKbA&usqp=CAU";
-    let image = document.getElementById("picture");
-    image.appendChild(img);
+    if(isNaN(myNumber)){
+        starRating()
+    }
+    while (myNumber < 1 || myNumber > 5) {
+        myNumber = prompt("Please choose again - Only numbers 1-5 please");
+    }
+    
+    for (let i = 1; i <= myNumber; i++) {
+        let img = document.createElement("img");
+        img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRpnDIQumZ4M76KIk21xmtrk0pDPIOXLzKbA&usqp=CAU";
+        let image = document.getElementById("picture");
+        image.appendChild(img);
+        
+    }
     
 }
+starRating()
 
 let x = 5
 
